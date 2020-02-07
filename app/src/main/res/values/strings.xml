@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Milkat</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="namek">KYC and Docs</string>
+
+    <string-array name = "card">
+        <item>PAN</item>
+        <item>Adhaar Card</item>
+        <item>Driving License</item>
+        <item>Passport</item>
+    </string-array>
+</resources>

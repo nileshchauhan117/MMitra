@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@drawable/i_dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/i_curproject"
+            android:title="Project List" />
+
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

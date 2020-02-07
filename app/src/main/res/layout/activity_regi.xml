@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maroon"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Register" />
+
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="I am"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_centerInParent="true" >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Promoter" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CA" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_centerInParent="true" >
+
+
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engineer" />
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Architect" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:id="@+id/layout_type"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/txt_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.15"
+                        android:gravity="left|top"
+                        android:hint="Select Promoter Type"
+                        android:inputType="textMultiLine"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:textColorHint="@color/grey"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:layout_below="@drawable/dropdown_icon"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_comy"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_comy"
+                    android:inputType="text"
+                    android:hint="Company Name *" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_partnershipFirm"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_partnershipFirm"
+                    android:inputType="text"
+                    android:hint="partnership Firm Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/layout_partnershipFirmno"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_partnershipFirmno"
+                    android:inputType="text"
+                    android:hint="partnership Firm Reg.No" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_fname"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_first"
+                    android:inputType="text"
+                    android:hint="First Name*" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_lname"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_last"
+                    android:inputType="text"
+                    android:hint="Last Name *" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_text_input"
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_email"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email ID *" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mobile_text_input"
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:maxLength="10"
+                    android:id="@+id/txt_mobile"
+                    android:inputType="number"
+                    android:hint="Mobile Number *" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_otp"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:hint="OTP *" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/txt_messotp"
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="60 min" />
+
+            <TextView
+                android:id="@+id/txt_messotp1"
+                android:textColor="@color/green"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="valid 15 min" />
+
+            <Button
+                android:id="@+id/btn_otp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAllCaps="false"
+                android:background="@drawable/round_green"
+                android:text="Get OTP" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:orientation="horizontal"
+              >
+
+                <CheckBox
+                    android:id="@+id/radio_turms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txt_tc"
+                    android:textColor="@color/grey"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:text="I agree to terms and conditions" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1">
+
+
+
+                <Button
+                    android:id="@+id/btnlogin"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_orange"
+                    android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/progressBar_main"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/curve_progress"
+            android:gravity="center"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress"
+            android:padding="10dp" />
+    </RelativeLayout>
+</LinearLayout>

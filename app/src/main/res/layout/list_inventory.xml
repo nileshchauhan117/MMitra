@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_title"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon_tra"
+        android:orientation="horizontal" >
+
+
+
+        <Spinner
+            android:id="@+id/tablea_spi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="15dp"
+            android:background="@drawable/arr"
+            android:layout_centerVertical="true"
+            android:tint="@color/maroon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="10dp"
+            android:text="Unit Name"
+            android:textColor="@color/maroon" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:tint="@color/maroon"
+            android:src="@drawable/down_a" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:id="@+id/title_f1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Block-A"
+                android:textColor="@color/grey" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_de"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="1px">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/tbl_header"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#AAAAAA">
+
+                    </TableLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:fillViewport="true">
+
+                        <TableLayout
+                            android:id="@+id/tbl_data"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#DDDDDD">
+
+                        </TableLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

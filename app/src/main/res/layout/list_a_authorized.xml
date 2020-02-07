@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Personal Info"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:id="@+id/tv_a_title"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name : "
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:id="@+id/tv_a_fname"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/tv_a_lname"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/tv_a_mno"
+            android:text="Mobile No."
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EmailID"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:id="@+id/tv_a_email"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/tv_4"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/tv_5"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:id="@+id/tv_6"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:id="@+id/tv_7"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:visibility="gone"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:id="@+id/tv_a_city"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ZIPCode"
+            android:textStyle="normal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/tv_a_zipcode"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

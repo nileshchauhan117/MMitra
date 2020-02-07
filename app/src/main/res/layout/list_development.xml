@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Of Inventory"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_typei"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No of Inventory"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_noofi"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carpet Area (Sq Mtr)"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_ca"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area of exclusive balcony/varandah (Sq.Mtr)"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_exclusiveb"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area of exclusive open terrace If any(Sq.Mtr)"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_exclusiveo"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+</LinearLayout>

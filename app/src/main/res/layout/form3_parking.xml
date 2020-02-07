@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maroon">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+        <TextView
+            android:id="@+id/tv_form2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:text="Bank and Lenders"
+            android:textColor="@color/white"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Form 3"
+            android:textColor="#FFFFFF"
+            android:id="@+id/title1"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="#FA7400"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/tv_username"
+            android:layout_toRightOf="@+id/tv_username"
+            android:text=" V1.4" />
+
+        <TextView
+            android:id="@+id/tv_form3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:text="Certificate"
+            android:textColor="@color/white"
+
+            />
+        <ImageView
+            android:id="@+id/img_pdf"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Logout"
+            android:tint="@color/white"
+            android:src="@drawable/pdf_link"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/t_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@color/maroon_tra"
+                android:text="Inventory"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Bank and Lenders"
+                android:background="@color/maroon_tra"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="10sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Certificate"
+                android:background="@color/maroon_tra"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="10sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Parking"
+                android:padding="5dp"
+                android:background="@color/maroon_tra"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/maroon"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/one_deatils"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@color/maroon">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/maroon_tra"
+                                android:padding="5dp"
+                                android:text="Parking Detail" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/curve_border_bg_new"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="1 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="No. Of Garages Proposed"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:id="@+id/tv_Garages"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/transparent"
+                                        android:text="0"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false"
+                                        android:inputType="number"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="2 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No. Of Garages Booked"
+                                        android:textStyle="normal"
+                                        android:padding="5dp"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5dp"
+                                        android:background="@drawable/curve_border_bg2"
+                                        android:text="0"
+                                        android:textStyle="normal"
+                                        android:inputType="number"
+                                        android:id="@+id/tv_GaragesBooked"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="3 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="No. of Open Parkings Proposed"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:id="@+id/tv_oParkings"
+                                        android:layout_width="match_parent"
+                                        android:text="0"
+                                        android:enabled="false"
+                                        android:paddingLeft="5dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/transparent"
+                                        android:inputType="number"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="4 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No. of Open Parkings Booked"
+                                        android:textStyle="normal"
+                                        android:padding="5dp"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:text="0"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5dp"
+                                        android:background="@drawable/curve_border_bg2"
+                                        android:inputType="number"
+                                        android:textStyle="normal"
+                                        android:id="@+id/tv_oParkingsBooked"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="5 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="No. of Covered Parkings Proposed"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:enabled="false"
+                                        android:text="0"
+                                        android:paddingLeft="5dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/transparent"
+                                        android:textStyle="normal"
+                                        android:inputType="number"
+                                        android:id="@+id/tv_cParkings"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.80"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="6 "
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="normal" />
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No. of Covered Parkings Booked"
+                                        android:textStyle="normal"
+                                        android:padding="5dp"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="0.20"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="#606060" />
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:text="0"
+                                        android:textStyle="normal"
+                                        android:inputType="number"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5dp"
+                                        android:background="@drawable/curve_border_bg2"
+                                        android:id="@+id/tv_cParkingsBooked"
+                                        android:textSize="12dp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_orange"
+                    android:text="Save" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layout_questions"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/gray_light" />
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="1px"
+                        android:visibility="gone"
+                        android:gravity="left|center"
+                        android:text="Signed Certificate Upload"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/maroon"
+                        android:background="@color/maroon_tra"/>
+
+
+                    <TextView
+                        android:id="@+id/q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1px"
+                        android:gravity="left|center"
+                        android:padding="5dp"
+                        android:maxLines="2"
+                        android:text="1.Whether the quarterly return is filed or not? "
+                        android:background="#FFFFFF"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_q1"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_alignParentTop="true" >
+
+                        <RadioButton
+                            android:id="@+id/radio0_q1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/radio1_q1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="No" />
+
+
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:paddingBottom="5dp"
+                        android:orientation="vertical"
+                        android:id="@+id/layout_image"
+                        android:layout_margin="5dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/tkk"
+                            android:visibility="gone"
+                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:text="Photo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/img_name"
+                            android:visibility="visible"
+                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:text="Photo" />
+
+                        <ImageView
+                            android:id="@+id/image_Upload"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="3dp"
+                            android:src="@drawable/noi"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_upload"
+                            android:layout_width="70dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_download_bg"
+                            android:text="Upload"
+                            android:textAllCaps="false"
+                            android:textSize="10dp"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_light" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="top|left"
+                        android:orientation="horizontal"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/radio_turms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="5dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/txt_tc"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp"
+                            android:gravity="left|center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:text="2.Whether the data in QPR is same as that in software ?" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1px"
+                        android:gravity="left|center"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:maxLines="2"
+                        android:text="2.Whether the data in QPR is same as that in software ?"
+                        android:background="#FFFFFF"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true" >
+
+                        <RadioButton
+                            android:id="@+id/radio0_q2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/radio1_q2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="No" />
+
+
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnsubmit"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/round_orange"
+                        android:padding="5dp"
+                        android:text="Complete Form" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/curve_progress"
+            android:indeterminateDrawable="@drawable/progress"
+            android:layout_width="70dp"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+</LinearLayout>

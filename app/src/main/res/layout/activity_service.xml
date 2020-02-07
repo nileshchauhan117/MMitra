@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maroon"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Services" />
+
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "1.DASHBOARD: For Promoters :"/>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It provides a business oversight view to a promoter by converting vast quantity of data for all projects into meaningful information summary that helps promoters in drawing vital inferences about project progress and compliance process status. The dashboard can be customized to present only the information that is deemed useful by the promoter.\n"
+/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "2. Centralized Data Storage with Total Control of Promoter on Project Data"/>
+
+
+    <TextView
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milkat Mitra offers centralized data management and processing for the data that is collected from diverse entry points through role based process execution by promoter staff and various consultant staff. Every piece of information being captured from various stakeholders is then processed in context of the project to define the project process life cycle. Centralized data storage provides Total Control of Promoter on Project Data and it ensures free flow of data over a secured channel to different professionals for execution of their roles and responsibilities aimed at complete RERA compliances.
+     "/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "03. Dedicated communication channel:"/>
+    <TextView
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our biggest strength is in recognizing the need for a secure channel for communication of both data and information. Transfer of data between various parties during the project registration phase or during quarterly and annual compliance calls for use of multiple communication portals. That is where our dedicated communication channel comes in. It completely eliminates the need for E-mails or third-party messaging applications as all the relevant data is just a few clicks away, easily accessible to the person with access rights
+   "/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "04. Data Privacy and Security:"/>
+    <TextView
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The platform is accessible through single Licence for project professionals to work on all projects they are providing services to through promoter authorisation and the project data and compliance data is stored in promoter database ensuring complete data security for Promoters. We ensure data security by having a clear hierarchy distribution. Licence Administrator can curtail the access rights of a user according to his data needs. Further there are data validation checkpoints at specific areas to ensure that changes to data are live only when validated by the Licence Administrator."
+     />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

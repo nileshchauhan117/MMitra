@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@drawable/i_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/i_user"
+            android:visible="false"
+            android:title="User Management" />
+        <item
+            android:id="@+id/nav_menu21"
+            android:visible="false"
+            android:title="Authorized Signatory" />
+        <item
+            android:id="@+id/nav_menu22"
+            android:visible="false"
+            android:title="Project Head" />
+        <item
+            android:id="@+id/nav_menu23"
+            android:visible="false"
+            android:title="Agent" />
+        <item
+            android:id="@+id/nav_menu24"
+            android:visible="false"
+            android:title="Contractor" />
+
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@drawable/i_curproject"
+            android:title="Current Project" />
+
+        <item
+            android:id="@+id/nav_menu4"
+            android:visible="false"
+            android:icon="@drawable/i_preproject"
+            android:title="Previous Projects" />
+
+        <item
+            android:id="@+id/nav_menu5"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

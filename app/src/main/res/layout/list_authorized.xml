@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="5dp">
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Name :Heenali"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:maxLines="3"
+            android:id="@+id/txt_mobileno"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Mobile Number :9898015800"
+            android:textColor="@color/gray_1"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mobileno"
+            android:maxLines="3"
+            android:id="@+id/txt_emailid"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Email Id:heenali@gmail.com"
+            android:textColor="@color/gray_1"
+            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/layout_btn_edit"
+                    android:background="@drawable/curve_border_bgcolor1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/edit_i" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|top"
+                        android:singleLine="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:id="@+id/btn_edit"
+                        android:text="Edit "
+                        android:textAllCaps="false"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/layout_btn_delete"
+                    android:background="@drawable/curve_border_bgcolor1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_i" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|top"
+                        android:singleLine="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:id="@+id/btn_delete"
+                        android:text="Delete "
+                        android:textAllCaps="false"
+                        android:textColor="@color/red"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="  View More ▼  "
+
+                    android:visibility="gone"
+                    android:id="@+id/btn_view_detail"
+                    android:textAllCaps="false"
+                    android:textColor="#4A86E8"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center|center"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:src="@drawable/logo" />
+            <TextView
+                android:text="Version 1.0"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/txt_version"
+                android:layout_margin="10dp"
+                android:textColor="@color/maroon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:gravity="center|center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Login as"
+                        android:layout_gravity="left"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="left"
+                        android:layout_centerInParent="true" >
+
+
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Consultant/Promoter" />
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Allottee" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:theme="@style/TextLabel"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.15"
+                        android:id="@+id/txt_mnos"
+                        android:hint="Enter Username"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="#aaaaaa"
+                        android:textColorHint="#aaaaaa"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:theme="@style/TextLabel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txt_passs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.15"
+                        android:hint="Enter password"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:textColor="#aaaaaa"
+                        android:textColorHint="#aaaaaa"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <CheckBox
+                    android:id="@+id/radio_turms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="gone"
+                    android:text="I agree to terms and conditions" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnlogin"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/round_orange"
+                        android:text="Sign in" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_main"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/curve_progress"
+            android:gravity="center"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress"
+            android:padding="10dp" />
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/bottombar"/>
+    </LinearLayout>
+</RelativeLayout>

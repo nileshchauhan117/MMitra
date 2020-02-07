@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.simplifiedcoding.navigationdrawerexample">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/wakeful"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity_Ca"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity_Engineer"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_Login"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_profile"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Profile_Additional"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Profile_Changepass"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Profile_Kyc"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Profile_Personal"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Authorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Contractor"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Agent"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_ProjectHead"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Add_Athorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Current_Project"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Current_Project_details"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Form"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Form3"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Form3_Centificate"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Form3_BankLenders"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Form3_Parking"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_consultants"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Regi"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Table_A"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Table_B"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".List_form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".list_ceri_devcost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".list_ceri_devcost2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".list_ceri_landlost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.Dash_QprtList"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_aboutus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_services"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_contactus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Verification"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name=".MyPromoter"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Current_Project_details_CA"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_qpr"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+              <activity android:name=".Activity.Dash"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.Dash_Inventory"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_FPass"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Allotta_list"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".webview"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_PP"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Terms"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity_Current_Project_other"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+       <activity android:name=".web"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".Form2a"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".pdffile"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

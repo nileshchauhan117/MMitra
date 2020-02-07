@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_d_typei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="No. Of Garages"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/tv_d_noofi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="No. of Open Parkings"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Covered Parkings"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:id="@+id/tv_d_ca"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        />
+
+
+</LinearLayout>
