@@ -63,7 +63,6 @@
                 android:layout_centerInParent="true"
                 android:text="I am"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/gray"
                 android:textSize="15dp" />
@@ -75,6 +74,7 @@
                 android:orientation="horizontal"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
+                android:visibility="gone"
                 android:layout_centerInParent="true" >
 
                 <RadioButton
@@ -98,6 +98,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingLeft="15dp"
+                android:visibility="gone"
                 android:paddingRight="15dp"
                 android:layout_centerInParent="true" >
 
@@ -113,6 +114,55 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Architect" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:id="@+id/layout_usertype"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/txt_usertype"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.15"
+                        android:gravity="left|top"
+                        android:hint="Select Promoter Type"
+                        android:inputType="textMultiLine"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:textColorHint="@color/grey"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:layout_below="@drawable/dropdown_icon"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/gray" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

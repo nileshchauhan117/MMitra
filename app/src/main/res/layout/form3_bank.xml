@@ -289,6 +289,12 @@
                 android:layout_margin="1px"
                 android:background="@color/white">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -296,8 +302,19 @@
                     android:padding="5dp"
                     android:text="Details of Project Loan and Lenders" />
 
-
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/txt_add"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:text=" ADD "
+                    android:textColor="@color/actionbarcolor" />
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -312,6 +329,143 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/curve_border_bg_new"
                     android:paddingBottom="5dp"
+                    android:id="@+id/container2"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/maroon_tra"
+                        android:id="@+id/layout_fone"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Project Loan"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/gray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+
+                                android:tint="@color/maroon"
+                                android:src="@drawable/down_a"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/maroon_tra"
+                        android:id="@+id/layout_ftwo"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Cash Credit/OverDraft"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/gray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+
+                                android:tint="@color/maroon"
+                                android:src="@drawable/down_a"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/maroon_tra"
+                        android:id="@+id/layout_fthree"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Other Borrowings"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/gray"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+
+                                android:tint="@color/maroon"
+                                android:src="@drawable/down_a"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curve_border_bg_new"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"
                     android:id="@+id/container1"
                     android:paddingTop="5dp"
                     android:layout_marginBottom="5dp"

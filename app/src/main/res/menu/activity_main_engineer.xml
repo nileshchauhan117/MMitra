@@ -32,10 +32,21 @@
             android:icon="@drawable/i_curproject"
             android:title="Current Project" />
 
+
+        <item
+            android:id="@+id/nav_menu44"
+            android:icon="@drawable/i_curproject"
+            android:title="Reports" />
+
         <item
             android:id="@+id/nav_menu4"
             android:icon="@drawable/i_preproject"
             android:title="Previous Projects" />
+
+        <item
+            android:id="@+id/nav_mess"
+            android:icon="@drawable/mess_i"
+            android:title="Messaging" />
 
         <item
             android:id="@+id/nav_menu5"

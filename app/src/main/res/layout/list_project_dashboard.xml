@@ -111,7 +111,7 @@
         android:orientation="horizontal"
         android:padding="5dp"
         android:visibility="gone"
-android:id="@+id/layout_other"
+        android:id="@+id/layout_other"
         android:weightSum="1">
 
         <LinearLayout

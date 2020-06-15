@@ -12,6 +12,7 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:maxLines="2"
+        android:enabled="false"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@color/skyblue"

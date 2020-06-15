@@ -106,7 +106,7 @@
                 android:gravity="left|center"
                 android:padding="5dp"
                 android:layout_margin="5dp"
-                android:background="@color/transparent"
+                android:background="@drawable/curve_border_bg2"
                 android:inputType="number"
                 android:hint="Remarks"
                 android:textAllCaps="false"

@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
-                android:inputType="number"
+                android:inputType="text"
                 android:background="@drawable/curve_border_bg2"
                 android:textColor="@color/original_black"
                 android:textSize="12dp"
@@ -515,7 +515,6 @@
                 android:id="@+id/layout_image1"
                 android:layout_margin="5dp">
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:id="@+id/tkk1"
@@ -526,8 +525,6 @@
                     android:textSize="12dp"
                     android:textStyle="bold"
                     android:text="Site Photographs" />
-
-
 
                 <ImageView
                     android:id="@+id/image_Upload2"
@@ -575,6 +572,13 @@
         android:layout_height="0.2dp"
         android:background="#606060" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="1"
+            android:baselineAligned="false">
         <Button
             android:id="@+id/btn_save"
             android:textColor="@color/white"
@@ -588,6 +592,33 @@
             android:textAllCaps="false"
             android:background="@drawable/round_orange"
             android:text="Save" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_orange"
+            android:text="Delete" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_serno"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

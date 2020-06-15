@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/maroon"
+        android:background="#2b3643"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -42,222 +43,343 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/curve_border_bg_new"
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/maroon_tra"
+        android:background="@drawable/curve_border_bg_new"
         android:id="@+id/layout_fC"
         android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="55dp"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:gravity="center"
                 android:text="CONSULTANTS"
-                android:paddingLeft="10dp"
-                android:layout_alignParentLeft="true"
-                android:textColor="@color/gray"
+                android:textColor="@color/maroon"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
 
             <ImageView
 
-                android:tint="@color/maroon"
-                android:src="@drawable/down_a"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:gravity="left"
-                android:padding="10dp"
-                />
-
-        </RelativeLayout>
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/maroon_tra"
-        android:id="@+id/layout_fone"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="FORM 1"
-                android:paddingLeft="10dp"
-                android:layout_alignParentLeft="true"
-                android:textColor="@color/gray"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-
-            <ImageView
-
-                android:tint="@color/maroon"
-                android:src="@drawable/down_a"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:visibility="gone"
                 android:padding="10dp"
-                />
+                android:src="@drawable/arrow_r"
+                android:tint="@color/maroon" />
 
         </RelativeLayout>
 
 
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/maroon_tra"
-        android:id="@+id/layout_ftwo"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="FORM 2"
-                android:paddingLeft="10dp"
-                android:layout_alignParentLeft="true"
-                android:textColor="@color/gray"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-
-            <ImageView
-
-                android:tint="@color/maroon"
-                android:src="@drawable/down_a"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:gravity="left"
-                android:padding="10dp"
-                />
-
-        </RelativeLayout>
-
-
-
-    </LinearLayout>
-    <LinearLayout
+        <LinearLayout
+            android:id="@+id/layout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@color/maroon_tra"
-            android:id="@+id/layout_ftwoa"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:id="@+id/layout_form1"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <RelativeLayout
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="FORM 2A"
+                    android:layout_margin="10dp"
+                    android:id="@+id/layout_fone"
                     android:paddingLeft="10dp"
-                    android:layout_alignParentLeft="true"
-                    android:textColor="@color/gray"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
+                    android:paddingRight="10dp"
+                    android:background="#337ab7"
+                    android:paddingTop="45dp"
+                    android:paddingBottom="45dp"
+                    >
 
 
-                <ImageView
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
 
-                    android:tint="@color/maroon"
-                    android:src="@drawable/down_a"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:gravity="left"
-                    android:padding="10dp"
-                    />
+                        >
 
-            </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="FORM 1"
+                            android:id="@+id/textView1"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView1"
+                            android:id="@+id/textView"
+                            android:text="dsfsfsf"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textColor="@color/grey"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"/>
 
 
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:id="@+id/layout_form2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/layout_ftwo"
+                    android:background="#e7505a"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="45dp"
+                    android:paddingBottom="45dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:text="FORM 2"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dsfsfsf"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textColor="@color/grey"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/maroon_tra"
-        android:id="@+id/layout_fthree"
-        android:orientation="horizontal">
+        <LinearLayout
 
-        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="FORM 3"
-                android:paddingLeft="10dp"
-                android:layout_alignParentLeft="true"
-                android:textColor="@color/gray"
-                android:textSize="15dp"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:id="@+id/layout_form2a"
+                android:gravity="center">
 
-
-            <ImageView
-
-                android:tint="@color/maroon"
-                android:src="@drawable/down_a"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:gravity="left"
-                android:padding="10dp"
-                />
-
-        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/layout_ftwoa"
+                    android:background="#32c5d2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="45dp"
+                    android:paddingBottom="45dp"
+                    >
 
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView">
 
-    </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="FORM 2A"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dsfsfsf"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textColor="@color/grey"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:id="@+id/layout_form3"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/layout_fthree"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#8e44ad"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="45dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="45dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="FORM 3"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="dsfsfsf"
+                            android:textColor="@color/grey"
+                            android:textSize="9dp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:id="@+id/layout_shedule"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/layout_shedule1"
+                    android:background="@color/green"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="45dp"
+                    android:paddingBottom="45dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="MOF\n(Means of Finance)"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dsfsfsf"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textColor="@color/grey"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

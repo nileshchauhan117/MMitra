@@ -492,7 +492,7 @@
                             android:layout_height="41dp"
                             android:layout_margin="1px"
                             android:gravity="center"
-                            android:text="Sr.No"
+                            android:text="Sr.No."
                             android:textColor="@color/black"
                             android:background="#cccccc"/>
 
@@ -1611,7 +1611,7 @@
                             android:background="#cccccc"
                             android:layout_margin="1px"
                             android:gravity="center"
-                            android:text="Sr.No"
+                            android:text="Sr.No."
                             android:textColor="@color/black"
                             android:textSize="12dp"
                             android:textStyle="normal" />
@@ -1782,7 +1782,7 @@
                                 android:background="@color/gainsboro" />
 
                             <TextView
-                                android:id="@+id/tv_data_table2"
+                                android:id="@+id/tv_data_table21"
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:gravity="center"
@@ -1814,8 +1814,10 @@
                 android:id="@+id/layout_questions"
                 android:layout_marginBottom="10dp"
                 android:padding="5dp"
+
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
+
 
                 <View
                     android:layout_width="match_parent"
@@ -1838,7 +1840,7 @@
 
 
                 <TextView
-                    android:id="@+id/q1"
+                    android:id="@+id/txt_question"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="1px"
@@ -1872,10 +1874,8 @@
                         android:checked="true"
                         android:text="No" />
 
-
-
-
                 </RadioGroup>
+
                 <TextView
                     android:layout_width="fill_parent"
                     android:id="@+id/txt_cdate"
@@ -1886,6 +1886,7 @@
                     android:textSize="15dp"
                     android:textColor="@color/red"
                     android:text="" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1895,64 +1896,74 @@
                     android:id="@+id/layout_image"
                     android:layout_margin="5dp">
 
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:id="@+id/tkk"
-                        android:visibility="gone"
-                        android:gravity="center_horizontal"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:textSize="12dp"
-                        android:textStyle="bold"
-                        android:text="Photo" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:id="@+id/img_name"
-                        android:visibility="visible"
-                        android:gravity="left"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:textSize="9dp"
-                        android:textColor="@color/red"
-                        android:text="*PLEASE UPLOAD THE SIGNED FORM SUBMITTED TO GUJRERA BEFORE FINAL CONFIRMATION." />
-
-                    <ImageView
-                        android:id="@+id/image_Upload"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="5dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:layout_gravity="left"
-                        android:padding="3dp"
-                        android:src="@drawable/noi"
-                        />
-
-                    <Button
-                        android:id="@+id/btn_upload"
-                        android:layout_width="70dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_gravity="left"
-                        android:background="@drawable/button_download_bg"
-                        android:text="Upload"
-                        android:textAllCaps="false"
-                        android:textSize="10dp"
-                        android:textColor="@color/white"
-                        />
-
-                    <View
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@color/gray_light" />
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/layout_image1"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/tkk"
+                            android:visibility="gone"
+                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:text="Photo" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:id="@+id/img_uplode_name"
+                            android:visibility="visible"
+                            android:gravity="left"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="9dp"
+                            android:textColor="@color/red"
+                            android:text="*PLEASE UPLOAD THE SIGNED FORM SUBMITTED TO GUJRERA BEFORE FINAL CONFIRMATION." />
+
+                        <ImageView
+                            android:id="@+id/image_Upload"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/noi"
+                            android:layout_gravity="left"
+                            android:padding="3dp"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_upload"
+                            android:layout_width="70dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="left"
+                            android:background="@drawable/button_download_bg"
+                            android:text="Upload"
+                            android:textAllCaps="false"
+                            android:textSize="10dp"
+                            android:textColor="@color/white"
+                            />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_light" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="60dp"
                         android:gravity="top|left"
+                        android:id="@+id/layout_image2"
                         android:orientation="horizontal"
                         >
 

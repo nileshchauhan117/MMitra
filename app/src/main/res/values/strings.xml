@@ -3,10 +3,11 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="inventorycost_name">Inventory and cost</string>
 
     <string name="action_settings">Settings</string>
     <string name="namek">KYC and Docs</string>
-
+    <string name="note">*The password must be minimum 8 character and must contain at least one upper case letter, one number and one special character.</string>
     <string-array name = "card">
         <item>PAN</item>
         <item>Adhaar Card</item>

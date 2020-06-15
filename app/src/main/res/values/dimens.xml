@@ -11,4 +11,6 @@
     <dimen name="placeholder_image">50dp</dimen>
     <dimen name="placeholder_text_height">8dp</dimen>
     <dimen name="activity_padding_horizontal">16dp</dimen>
+
+    <dimen name="botton">30dp</dimen>
 </resources>

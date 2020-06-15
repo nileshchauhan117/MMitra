@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:id="@+id/l_Repayment"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center"
+                android:singleLine="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="Period"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tkk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="1"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:layout_margin="5dp"
+                android:text="Principal"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:text="Interest"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_ap"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center"
+                android:singleLine="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:ellipsize="end"
+                android:text="Total Expected Repayment"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <EditText
+                android:id="@+id/txt_Repayment_Principal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:enabled="false"
+                android:focusable="false"
+                android:ellipsize="end"
+                android:layout_margin="5dp"
+                android:background="@color/transparent"
+                android:hint="0.00"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <EditText
+                android:id="@+id/txt_Repayment_Interest"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:background="@color/transparent"
+                android:hint="0.00"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+    <CheckBox
+        android:id="@+id/checkBox_value_Repayment"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Quarterly info. available?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+    <LinearLayout
+        android:id="@+id/container_Repayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_total_Repayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center"
+                android:singleLine="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="Total"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:id="@+id/total_Principal"
+                android:layout_margin="5dp"
+                android:text="Principal"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/tvcolor"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_light" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:focusable="false"
+                android:enabled="false"
+                android:id="@+id/total_Interest"
+                android:text="Interest"
+                android:textAllCaps="false"
+                android:textColor="@color/tvcolor"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -13,8 +13,10 @@
         android:paddingRight="5dp"
         android:maxLines="2"
         android:text=""
+        android:textSize="12dp"
         android:background="#FFFFFF"
         />
+
     <ImageView
         android:id="@+id/tv_image"
         android:layout_width="100dp"

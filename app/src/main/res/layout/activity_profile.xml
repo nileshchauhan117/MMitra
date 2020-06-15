@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,6 +37,13 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,13 +110,27 @@
             android:layout_height="0.9dp"
             android:background="@color/gray_light" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/txt_mess"
+            android:gravity="center"
+            android:text="Profile Completeness: 100% ‼"
+            android:textColor="@color/maroon" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
             android:id="@+id/layout_personal"
             android:orientation="horizontal"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:layout_width="50dp"
@@ -206,7 +228,7 @@
             android:paddingBottom="10dp"
             android:id="@+id/layout_kyc"
             android:orientation="horizontal"
-            android:paddingTop="20dp" >
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:layout_width="50dp"
@@ -227,6 +249,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:paddingLeft="5dp"
+                    android:id="@+id/txt_kyctype"
                     android:paddingRight="5dp"
                     android:paddingTop="5dp"
                     android:textStyle="bold"
@@ -255,7 +278,7 @@
             android:paddingBottom="10dp"
             android:id="@+id/layout_changepass"
             android:orientation="horizontal"
-            android:paddingTop="20dp" >
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:layout_width="50dp"
@@ -304,7 +327,7 @@
             android:paddingBottom="10dp"
             android:id="@+id/layout_promoterlist"
             android:orientation="horizontal"
-            android:paddingTop="20dp" >
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:layout_width="50dp"
@@ -347,4 +370,79 @@
 
         </LinearLayout>
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_main"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/curve_progress"
+        android:gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress"
+        android:padding="10dp" />
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:background="@color/gray_light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/layout_pan"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="ss"
+            card_view:civ_border_color="@color/maroon"
+            card_view:civ_border_width="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/noi"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingBottom="5dp"
+                android:text="PAN Number"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/tv_panno"
+                android:text="9898015800"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

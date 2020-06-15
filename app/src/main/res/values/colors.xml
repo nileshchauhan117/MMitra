@@ -9,6 +9,7 @@
     <color name="indigo_700">#303f9f</color>
     <color name="cyan_500">#00bcd4</color>
     <color name="app_orange">#D35316</color>
+    <color name="app_textcolor">#2b3643</color>
     <color name="app_orange_verydark">#FA4200</color>
 
     <color name="material_color">#009385</color>
@@ -293,10 +294,11 @@
     <color name="limegreen">#ff32cd32</color>
     <color name="linen">#fffaf0e6</color>
     <color name="magenta">#ffff00ff</color>
-    <color name="maroon">#8D1A1A</color>
-    <color name="maroon_tra">#208D1A1A</color>
+    <color name="maroon">#3598fc</color>
+    <color name="maroon_dark1"> #3553fc</color>
+    <color name="maroon_tra">#203598fc</color>
     <color name="placeholder_bg">#dddddd</color>
-    <color name="maroon_dark">#5A0000</color>
+    <color name="maroon_dark">#2b3643</color>
     <color name="mediumaquamarine">#ff66cdaa</color>
     <color name="mediumblue">#ff0000cd</color>
     <color name="mediumorchid">#ffba55d3</color>

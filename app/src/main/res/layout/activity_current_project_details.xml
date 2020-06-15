@@ -223,7 +223,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="160dp"
                                 android:layout_height="wrap_content"
                                 android:singleLine="true"
                                 android:text="Registered Office Address"
@@ -350,6 +350,31 @@
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
 
+                             <TextView
+                                 android:layout_width="180dp"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/gray"
+                                 android:textSize="12dp"
+                                 android:singleLine="true"
+                                 android:text="Project Assignee"
+                                 android:textStyle="normal" />
+
+                             <TextView
+                                 android:id="@+id/tv_assign"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:textColor="@color/gray"
+                                 android:textSize="12dp"
+                                 android:textStyle="normal" />
+
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+
                           <TextView
                                  android:layout_width="180dp"
                                  android:layout_height="wrap_content"
@@ -418,11 +443,9 @@
                              android:textSize="12dp"
                              android:textStyle="normal" />
                          </LinearLayout>
-
                          <LinearLayout
                              android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
-                             android:visibility="gone"
                              android:orientation="horizontal">
 
                              <TextView
@@ -431,22 +454,47 @@
                                  android:textColor="@color/gray"
                                  android:textSize="12dp"
                                  android:singleLine="true"
-                                 android:text="Registration Number1"
+                                 android:text="Application Date"
                                  android:textStyle="normal" />
 
-                         <TextView
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:text="Registration Number1"
-                             android:textStyle="normal"
-                             android:id="@+id/tv_p_reg"
-                             android:visibility="gone"
-                             android:padding="5dp"
-                             android:textColor="@color/gray"
-                             android:textSize="12dp"
-                             />
+                             <TextView
+                                 android:id="@+id/tv_appdate"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:textColor="@color/gray"
+                                 android:textSize="12dp"
+                                 android:textStyle="normal" />
 
                          </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="180dp"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/gray"
+                                 android:textSize="12dp"
+                                 android:singleLine="true"
+                                 android:text="Registration Number"
+                                 android:textStyle="normal" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text=""
+                                 android:textStyle="normal"
+                                 android:padding="5dp"
+                                 android:id="@+id/tv_p_reg"
+                                 android:textColor="@color/gray"
+                                 android:textSize="12dp"
+                                 />
+
+                         </LinearLayout>
+
+
 
                          <LinearLayout
                              android:layout_width="wrap_content"
@@ -486,12 +534,12 @@
                                  android:textColor="@color/gray"
                                  android:textSize="12dp"
                                  android:singleLine="true"
-                                 android:text="Project Name : "
+                                 android:text="Project Name "
                                  android:textStyle="normal" />
                          <TextView
                              android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
-                             android:text="Project Name : "
+                             android:text="Project Name "
                              android:textStyle="normal"
                              android:padding="5dp"
                              android:id="@+id/tv_p_name"
@@ -923,7 +971,7 @@
 
 
                          <TextView
-                             android:layout_width="180dp"
+                             android:layout_width="220dp"
                              android:layout_height="wrap_content"
                              android:text="Latitudes and Longitudes Information :"
                              android:textStyle="normal"
@@ -1045,6 +1093,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_margin="5dp"
+                    android:id="@+id/rera_la"
+                    android:visibility="gone"
                     android:background="@color/gray">
 
                     <LinearLayout
@@ -1224,13 +1274,40 @@
                 android:paddingBottom="2dp"
                 android:background="@color/white"
                 android:id="@+id/three"
-                android:visibility="gone"
                 android:orientation="horizontal"
                 android:paddingTop="2dp" >
 
-                <RelativeLayout
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:background="@color/gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="1px"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/maroon_tra"
+                            android:padding="5dp"
+                            android:text="Engineers" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                    <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+
+                        android:visibility="gone"
                     android:layout_gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -1238,7 +1315,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="Consultants and Professionals"
+
                         android:paddingLeft="10dp"
                         android:layout_alignParentLeft="true"
                         android:textColor="@color/maroon"
@@ -1738,7 +1815,7 @@
                             android:layout_height="wrap_content"
                             android:background="@color/maroon_tra"
                             android:padding="5dp"
-                            android:text="Block and Inventory" />
+                            android:text="Blocks and Inventory" />
 
                     </LinearLayout>
 

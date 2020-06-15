@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/maroon</item>
-        <item name="colorPrimaryDark">@color/maroon_dark</item>
+        <item name="colorPrimary">@color/app_textcolor</item>
+        <item name="colorPrimaryDark">@color/app_textcolor</item>
         <item name="colorAccent">@color/maroon</item>
     </style>
 
@@ -18,23 +18,22 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="TextLabel" parent="TextAppearance.AppCompat">
         <!-- Hint color and label coli_historyr in FALSE state -->
-        <item name="android:textColorHint">@color/maroon</item>
+        <item name="android:textColorHint">@color/app_orange</item>
         <item name="android:textSize">20dp</item>
         <!-- Label coli_historyr in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorControlNormal">#7f7f7f</item>
-        <item name="colorControlActivated">#7f7f7f</item>
-        <item name="colorControlHighlight">#7f7f7f</item>
+        <item name="backgroundTint">#2b3643</item>
+        <item name="colorControlNormal">#2b3643</item>
+        <item name="colorControlActivated">#2b3643</item>
+        <item name="colorControlHighlight">#2b3643</item>
 
     </style>
-
-
 
     <style name="Tooltip2">
         <item name="android:text">qwqwrqwfqwfqwfqwfqwf</item>
         <item name="android:textColor">?android:textColorPrimaryInverse</item>
         <item name="android:textSize">18sp</item>
         <item name="android:lineSpacingExtra">5dp</item>
-        <item name="backgroundColor">@color/maroon_dark</item>
+        <item name="backgroundColor">@color/app_textcolor</item>
         <item name="cornerRadius">10dp</item>
     </style>
 

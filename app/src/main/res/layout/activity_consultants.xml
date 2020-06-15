@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/maroon">
+        android:background="@color/app_textcolor">
 
         <ImageView
             android:id="@+id/back_btn"
@@ -49,6 +49,7 @@
             android:text="Consultants"
             android:textColor="#FFFFFF"
             android:textSize="13dp"
+            android:id="@+id/title1"
             android:textStyle="bold"
             android:visibility="visible" />
 
@@ -93,186 +94,593 @@
             android:scrollbars="vertical"
             android:fadingEdge="none">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/three_deatils"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/gray">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="1px"
-                android:background="@color/white">
-
-                <TextView
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/maroon_tra"
-                    android:padding="5dp"
-                    android:text="Project Architect" />
+                    android:orientation="vertical"
+                    android:id="@+id/three_deatils"
+                    android:background="@color/white">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/curve_border_bg2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/maroon_tra"
+                                    android:padding="5dp"
+                                    android:text="Project Architect (For Form-1)" />
+
+                                <TextView
+                                    android:id="@+id/form1_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Register New"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/form1_remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Remove"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                     />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/form1_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:text="Selection Confirmed"
+                                android:textColor="@color/blue_back"
+                                android:textSize="16dp"
+                                />
+                            <Button
+                                android:id="@+id/form1_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/button_edit_bg"
+                                android:text="Confirm"
+                                android:textAllCaps="false"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
+                                />
+                        <TextView
+                            android:id="@+id/form1_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:background="@color/maroon_tra"
+                            android:text="Select From List"
+                            android:textColor="@color/blue"
+                            android:textSize="16dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_margin="1px"
+                            android:id="@+id/layout_ProjectArchitect"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/white">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/curve_border_bg2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/maroon_tra"
+                                    android:padding="5dp"
+                                    android:text="Project Engineer (For Form-2) " />
+
+                                <TextView
+                                    android:id="@+id/form2_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Register New"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/form2_remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Remove"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                     />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/form2_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:text="Selection Confirmed"
+                                android:textColor="@color/blue_back"
+                                android:textSize="16dp"
+                                />
+                            <Button
+                                android:id="@+id/form2_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/button_edit_bg"
+                                android:text="Confirm"
+                                android:textAllCaps="false"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
+                                />
+                        <TextView
+                            android:id="@+id/form2_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:background="@color/maroon_tra"
+                            android:text="Select From List"
+                            android:textColor="@color/blue"
+                            android:textSize="16dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_margin="1px"
+                            android:id="@+id/layout_StructuralEngineers"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/white">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/curve_border_bg2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/maroon_tra"
+                                    android:padding="5dp"
+                                    android:text="Project Engineer (For Form-2A) " />
+
+                                <TextView
+                                    android:id="@+id/form2a_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Register New"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/form2a_remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Remove"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/form2a_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:text="Selection Confirmed"
+                                android:textColor="@color/blue_back"
+                                android:textSize="16dp"
+                                />
+                            <Button
+                                android:id="@+id/form2a_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/button_edit_bg"
+                                android:text="Confirm"
+                                android:textAllCaps="false"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
+                                />
+                        <TextView
+                            android:id="@+id/form2a_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:background="@color/maroon_tra"
+                            android:text="Select From List"
+                            android:textColor="@color/blue"
+                            android:textSize="16dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_margin="1px"
+                            android:id="@+id/layout_StructuralEngineers1"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/white">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/curve_border_bg2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/maroon_tra"
+                                    android:padding="5dp"
+                                    android:text="Structural Consultant" />
+                                <TextView
+                                    android:id="@+id/s_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Register New"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/s_remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Remove"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                     />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/s_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:text="Selection Confirmed"
+                                android:textColor="@color/blue_back"
+                                android:textSize="16dp"
+                                />
+                            <Button
+                                android:id="@+id/s_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/button_edit_bg"
+                                android:text="Confirm"
+                                android:textAllCaps="false"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
+                                />
+                        <TextView
+                            android:id="@+id/s_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:background="@color/maroon_tra"
+                            android:text="Select From List"
+                            android:textColor="@color/blue"
+                            android:textSize="16dp"
+                            />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_margin="1px"
+                            android:id="@+id/layout_StructuralConsultant"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/white">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/curve_border_bg2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="1px"
+                            android:background="@color/white">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/maroon_tra"
+                                    android:padding="5dp"
+                                    android:text="Project CA (For Form-3)" />
+
+                                <TextView
+                                    android:id="@+id/form3_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:textColor="@color/blue"
+                                    android:textSize="16dp"
+                                    android:text="Register New" />
+
+                                <TextView
+                                    android:id="@+id/form3_remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Remove"
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                  />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/form3_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:text="Selection Confirmed"
+                                android:textColor="@color/blue_back"
+                                android:textSize="16dp"
+                                />
+                            <Button
+                                android:id="@+id/form3_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/button_edit_bg"
+                                android:text="Confirm"
+                                android:textAllCaps="false"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
+                                />
+                        <TextView
+                            android:id="@+id/form3_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:background="@color/maroon_tra"
+                            android:text="Select from List"
+                            android:textColor="@color/blue"
+                            android:textSize="16dp"
+                            />
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_margin="1px"
+                            android:id="@+id/layout_ProjectCA"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@color/white">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="5dp"
-                android:paddingBottom="5dp"
-                android:layout_margin="1px"
-                android:id="@+id/layout_ProjectArchitect"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp"
-                android:background="@color/white">
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/gray">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="1px"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/maroon_tra"
-                    android:padding="5dp"
-                    android:text="Engineers" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="5dp"
-                android:paddingBottom="5dp"
-                android:layout_margin="1px"
-                android:id="@+id/layout_StructuralEngineers"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp"
-                android:background="@color/white">
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/gray">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="1px"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/maroon_tra"
-                    android:padding="5dp"
-                    android:text="Structural Consultant" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="5dp"
-                android:paddingBottom="5dp"
-                android:layout_margin="1px"
-                android:id="@+id/layout_StructuralConsultant"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp"
-                android:background="@color/white">
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/gray">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="1px"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/maroon_tra"
-                    android:padding="5dp"
-                    android:text="Project CA" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="5dp"
-                android:paddingBottom="5dp"
-                android:layout_margin="1px"
-                android:id="@+id/layout_ProjectCA"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp"
-                android:background="@color/white">
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-        </LinearLayout>
         </ScrollView>
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:background="@drawable/curve_progress"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:indeterminateDrawable="@drawable/progress"
-        android:layout_width="70dp"
-        android:padding="10dp"
-        android:layout_height="70dp" />
-</RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/curve_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress"
+            android:layout_width="70dp"
+            android:padding="10dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
 </LinearLayout>
+

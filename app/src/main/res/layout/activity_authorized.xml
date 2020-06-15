@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/layout_top"
-            android:background="@color/maroon"
+            android:background="@color/app_textcolor"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 

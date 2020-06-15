@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.simplifiedcoding.navigationdrawerexample">
+    package="com.MilkatMitra.App">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,12 +10,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
+        android:largeHeap="true"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/wakeful"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Splash"
+            android:name="com.MilkatMitra.App.Splash"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,61 +25,107 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity_Ca"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity_Engineer"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.MainActivity"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.MainActivity_Ca"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.MainActivity_Engineer"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activity_Login"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_profile"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Profile_Additional"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Profile_Changepass"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Profile_Kyc"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Profile_Personal"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Authorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Contractor"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Agent"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_ProjectHead"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Add_Athorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Current_Project"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Current_Project_details"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Form"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Form3"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Form3_Centificate"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Form3_BankLenders"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Form3_Parking"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_consultants"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Regi"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Table_A"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Table_B"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".List_form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".list_ceri_devcost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".list_ceri_devcost2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".list_ceri_landlost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity.Dash_QprtList"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Login"
+            android:largeHeap="true" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_profile"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Profile_Additional"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Profile_Changepass"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Profile_Kyc"   android:windowSoftInputMode="stateAlwaysHidden" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Profile_Personal"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Authorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Contractor"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Agent"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_ProjectHead"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Add_Athorized"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Current_Project"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Current_Project_details"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Form"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Form3"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Form3_Centificate"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Form3_BankLenders"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Form3_Parking"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_consultants"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Regi"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Table_A"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Table_B"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.List_form2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.list_ceri_devcost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.list_ceri_devcost2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.list_ceri_landlost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Dash_QprtList"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activity_aboutus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_services"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_aboutus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_services"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activity_contactus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Verification"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_contactus"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Verification"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <activity android:name=".MyPromoter"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Current_Project_details_CA"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.MyPromoter"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Current_Project_details_CA"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Documnets"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_SubDocumnets"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Home"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Login_new"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Dash_schedule"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activity_qpr"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-              <activity android:name=".Activity.Dash"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity.Dash_Inventory"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_FPass"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Allotta_list"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".webview"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_PP"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Terms"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Activity_Current_Project_other"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-       <activity android:name=".web"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".Form2a"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".pdffile"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_qpr"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+              <activity android:name="com.MilkatMitra.App.Activity.Dash"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_Report"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Dash_Inventory"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
+        <activity android:name="com.MilkatMitra.App.Activity_consultant_add"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_FPass"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Allotta_list"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.webview"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_PP"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Terms"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Current_Project_other"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+       <activity android:name="com.MilkatMitra.App.web"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Form2a"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.pdffile"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.webview_pdf"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Report.Activity_AFS_R"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Report.Activity_Inventory_R"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Report.Activity_SummaryProjects"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Report.Activity_Block_R"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Report.Activity_ProjectReport"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Dash_schedule_B"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_consultant_list"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_InventoryCost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_ConstructionShedule"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_landcost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_ConstructionCost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_othercost"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity.Activity_ConstructionShedule2"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Tab_CreditOverdraft"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Tab_OtherBorrowings"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Tab_PromoterCapital"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Tab_ProjectLoan"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Actual_ProjectLoan"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Actual_PromoterCapital"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Actual_OtherBorrowings"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Actual_BankLenders"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Actual_CreditOverdraft"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Messenger.Activity_messlist"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Messenger.Activity_mess_deatil"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Form3_projectloan"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Form3_OtherBorrowings"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Fund.Activity_Form3_CreditOverdraft"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_consultants_main"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_Partner"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="com.MilkatMitra.App.Activity_profile_entitytype"  android:windowSoftInputMode="stateAlwaysHidden"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
     </application>
 
 </manifest>

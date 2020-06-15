@@ -34,6 +34,22 @@
             android:title="Current Project" />
 
         <item
+            android:id="@+id/nav_preport"
+            android:visible="false"
+            android:icon="@drawable/i_curproject"
+            android:title="Project Reports" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report_icon"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/nav_mess"
+            android:icon="@drawable/mess_i"
+            android:title="Messaging" />
+
+        <item
             android:id="@+id/nav_menu4"
             android:visible="false"
             android:icon="@drawable/i_preproject"

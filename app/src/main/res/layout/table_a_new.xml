@@ -52,8 +52,6 @@
 
 
 
-
-
                 <LinearLayout
                     android:id="@+id/layout_name"
                     android:layout_width="match_parent"
@@ -106,7 +104,7 @@
                             android:maxLines="2"
                             android:layout_margin="5dp"
                             android:background="@color/transparent"
-                            android:text="Work"
+                            android:text="Quantity"
                             android:textAllCaps="false"
                             android:textColor="@color/tvcolor"
                             android:textSize="15sp"
@@ -136,7 +134,7 @@
                             android:maxLines="2"
                             android:layout_margin="5dp"
                             android:background="@color/transparent"
-                            android:text="Quantity"
+                            android:text="Work"
                             android:textAllCaps="false"
                             android:textColor="@color/tvcolor"
                             android:textSize="15sp"

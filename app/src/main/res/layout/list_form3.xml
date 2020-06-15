@@ -51,12 +51,28 @@
                     android:layout_width="0.5dp"
                     android:layout_height="fill_parent"
                     android:background="#606060" />
+
+                <Spinner
+                    android:id="@+id/txt_state"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/curve_border_bg2"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/original_black"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+
                 <EditText
                     android:id="@+id/tv_BankName"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:background="@drawable/curve_border_bg2"
                     android:layout_width="match_parent"
+                    android:visibility="gone"
                     android:textColor="@color/original_black"
                     android:textSize="12dp"
                     android:textStyle="normal" />
@@ -216,8 +232,10 @@
                 <EditText
                     android:id="@+id/tv_AccountName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:background="@drawable/curve_border_bg2"
                     android:textColor="@color/original_black"
                     android:textSize="12dp"
@@ -638,6 +656,326 @@
             android:layout_margin="2dp"
             android:background="#606060" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bank Account First Page"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#606060" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_image"
+                    android:layout_margin="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tkk"
+                        android:visibility="gone"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:text="Site Photographs" />
+
+
+
+                    <ImageView
+                        android:id="@+id/image_Statement"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:background="@drawable/noi"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_Statement"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_download_bg"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/tv_Statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:background="@drawable/curve_border_bg2"
+                    android:textColor="@color/original_black"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#606060" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Closing Balance (Bank Statement)"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#606060" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_opening"
+                    android:layout_margin="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/opening"
+                        android:visibility="gone"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:text="Site Photographs" />
+
+
+
+                    <ImageView
+                        android:id="@+id/image_opening"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:background="@drawable/noi"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_opening"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_download_bg"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/tv_opening"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:background="@drawable/curve_border_bg2"
+                    android:textColor="@color/original_black"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#606060" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Closing Balance File"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#606060" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_Closing"
+                    android:layout_margin="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/Closing"
+                        android:visibility="gone"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:text="Site Photographs" />
+
+
+
+                    <ImageView
+                        android:id="@+id/image_Closing"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:background="@drawable/noi"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_Closing"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_download_bg"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/tv_Closing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:background="@drawable/curve_border_bg2"
+                    android:textColor="@color/original_black"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#606060" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="5dp"
+            android:id="@+id/t"
+            android:text="Note: As per RERA Bank Rules, it is mandatory to deposit 70% of the inventory sales consideration into the designated RERA Bank Account."
+            android:textAllCaps="false"
+            android:textColor="@color/Red"
+            android:textSize="10sp" />
         <Button
             android:id="@+id/btn_save"
             android:textColor="@color/white"

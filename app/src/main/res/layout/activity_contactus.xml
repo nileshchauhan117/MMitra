@@ -40,6 +40,7 @@
         android:layout_height="match_parent"
         android:paddingTop="10dp"
         android:paddingLeft="10dp"
+
         android:paddingRight="10dp"
         android:orientation="vertical"
         >
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
             android:id="@+id/layout_personal"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:paddingTop="10dp" >
 
@@ -94,6 +96,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.9dp"
+            android:visibility="gone"
             android:background="@color/gray_light" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +137,7 @@
                     android:layout_gravity="left"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:text="milkatmitra@gmail.com"
+                    android:text="admin@milkatmitra.com"
                     android:textColor="@color/grey" />
 
 
@@ -175,7 +178,7 @@
                     android:paddingTop="5dp"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:text="Contact :"
+                    android:text="Phone :"
                     android:textColor="@color/grey" />
 
                 <TextView
@@ -184,7 +187,7 @@
                     android:layout_gravity="left"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:text="+91 00000 00000"
+                    android:text="+91 98249 66616"
                     android:textColor="@color/grey" />
 
 
